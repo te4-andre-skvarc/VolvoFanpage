@@ -1,12 +1,12 @@
 
-class Site < Sinatra::Base
-    Dotenv.load
-    enable :sessions
+# class Site < Sinatra::Base
+#     Dotenv.load
+#     enable :sessions
 
-    get '/' do
+#     get '/' do
 
-        slim :index
-    end
+#         slim :index
+#     end
 
-end
+# end
     
