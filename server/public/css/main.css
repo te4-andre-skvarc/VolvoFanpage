@@ -11,20 +11,18 @@ body{
 }
 
 header{
-
-    height: 100px;
     background-color:white;
     border-bottom: 5px solid #0D334C;
-    
+    height: 11vh;
 
 }
 
 .headergrid{
     display: grid;
     grid-template-columns: repeat(2, 20%) 20% repeat(2, 20%);
-    grid-template-rows: 100px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    height: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     grid-template-areas: 
     "navig1 navig2 volvopic navig3 navig4"
     ;
@@ -33,24 +31,28 @@ header{
 .volvoimg{
 
     grid-area: volvopic;
-    background-image: url(/img/volvo_logocutted.jpg);
-    background-position: center;
-    background-size: 65%;
+    background-image: url(/img/volvo_logo_mobile.png);
+    background-position: center center ;
+    background-size: contain;
+    background-repeat: no-repeat;
     
     
 
 }
 .headercont{
-
-    text-align: center;
-    margin-top: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 0.8rem;
+    
 
 }
 
 .grid-container {
-    margin: 100px;
+    margin: 0;
     display: grid;
     
     grid-template-columns: 100%;
@@ -104,7 +106,6 @@ header{
 
     grid-area: 1!;
     border: 1px double #737070;
-    border-radius: 10px;
     background-image: url(/img/Vovlo_fitted_xc90.jpg);
     background-position: center;
     background-size: cover;
@@ -116,9 +117,9 @@ header{
 .info1{
     
     grid-area : in1; 
-    margin-right: 30px;
+    margin-right: 10px;
     top: 0;
-    left: -200%;
+    left: -180%;
     transition: left 0.3s;
     overflow: hidden;
 }
@@ -183,5 +184,375 @@ header{
     grid-area: 10!;
 
 }
-
+@media screen and (min-width: 1224px) {
+    body{
+        /* background-color: #e6e6e6; */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+        background: rgb(226,226,226); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
     
+      margin:0;
+    }
+    
+    header{
+    
+        height: 100px;
+        background-color:white;
+        border-bottom: 5px solid #0D334C;
+        
+    
+    }
+    
+    .headergrid{
+        display: grid;
+        grid-template-columns: repeat(2, 20%) 20% repeat(2, 20%);
+        grid-template-rows: 100px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+        "navig1 navig2 volvopic navig3 navig4"
+        ;
+    }
+    
+    .volvoimg{
+    
+        grid-area: volvopic;
+        background-image: url(/img/volvo_logocutted.jpg);
+        background-position: center;
+        background-size: 65%;
+        
+        
+    
+    }
+    .headercont{
+    
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    
+    }
+    
+    .grid-container {
+        margin: 100px;
+        display: grid;
+        
+        grid-template-columns: 100%;
+        grid-template-rows:  650px 650px 650px 650px 650px 650px 650px 650px 650px 650px;
+        gap: 40px 1px;
+        grid-template-areas:
+          "1!"
+          "2!"
+          "3!"
+          "4!"
+          "5!"
+          "6!"
+          "7!"
+          "8!"
+          "9!"
+          "10!";
+      }
+    
+      .text1{
+        grid-area: text;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        margin-left: 10%;
+        margin-bottom: 50%;
+        opacity: 80%;
+        
+      }
+    
+     .readtext{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 30px;
+        
+     }
+    
+    .cargrid{
+        display: grid; 
+        grid-template-columns: 45% 55%; 
+        grid-template-rows: 100%; 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        grid-template-areas: 
+            "text in1"
+        
+        ;
+    }
+    
+    
+    .car1{
+    
+        grid-area: 1!;
+        border: 1px double #737070;
+        border-radius: 10px;
+        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    }
+    
+    .info1{
+        
+        grid-area : in1; 
+        margin-right: 30px;
+        top: 0;
+        left: -200%;
+        transition: left 0.3s;
+        overflow: hidden;
+    }
+    
+    .xc90text{
+        top: 0;
+        right: -200%;
+        transition: right 0.3s;
+        position: relative;
+        
+    }
+    
+    .knapp{
+        right: 0;
+    }
+    
+    .car2{
+    
+        grid-area: 2!;
+        background-color: red;
+    
+    }
+    
+    .car3{
+    
+        grid-area: 3!;
+        background-color: red;
+    
+    }
+    .car4{
+    
+        grid-area: 4!;
+    
+    }
+    .car5{
+    
+        grid-area: 5!;
+    
+    }
+    .car6{
+    
+        grid-area: 6!;
+    
+    }
+    .car7{
+    
+        grid-area: 7!;
+    
+    }
+    .car8{
+    
+        grid-area: 8!;
+    
+    }
+    .car9{
+    
+        grid-area: 9!;
+    
+    }
+    .car10{
+    
+        grid-area: 10!;
+    
+    }
+  }
+  @media only screen  and (min-width : 1526px) {
+    body{
+        /* background-color: #e6e6e6; */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+        background: rgb(226,226,226); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    
+      margin:0;
+    }
+    
+    header{
+    
+        height: 100px;
+        background-color:white;
+        border-bottom: 5px solid #0D334C;
+        
+    
+    }
+    
+    .headergrid{
+        display: grid;
+        grid-template-columns: repeat(2, 20%) 20% repeat(2, 20%);
+        grid-template-rows: 100px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+        "navig1 navig2 volvopic navig3 navig4"
+        ;
+    }
+    
+    .volvoimg{
+    
+        grid-area: volvopic;
+        background-image: url(/img/volvo_logocutted.jpg);
+        background-position: center;
+        background-size: 13rem;
+        
+        
+    
+    }
+    .headercont{
+    
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+    
+    }
+    
+    .grid-container {
+        margin: 100px;
+        display: grid;
+        height: 100%;
+        grid-template-rows:  1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px;
+        gap: 40px 1px;
+        grid-template-areas:
+          "1!"
+          "2!"
+          "3!"
+          "4!"
+          "5!"
+          "6!"
+          "7!"
+          "8!"
+          "9!"
+          "10!";
+      }
+    
+      .text1{
+        grid-area: text;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        margin-left: 10%;
+        margin-bottom: 50%;
+        opacity: 80%;
+        
+      }
+    
+     .readtext{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 30px;
+        
+     }
+    
+    .cargrid{
+        display: grid; 
+        grid-template-columns: 45% 55%; 
+        grid-template-rows: 100%; 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        grid-template-areas: 
+            "text in1"
+        
+        ;
+    }
+    
+    
+    .car1{
+    
+        grid-area: 1!;
+        border: 1px double #737070;
+        border-radius: 10px;
+        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    }
+    
+    .info1{
+        
+        grid-area : in1; 
+        margin-right: 30px;
+        top: 0;
+        left: -200%;
+        transition: left 0.3s;
+        overflow: hidden;
+    }
+    
+    .xc90text{
+        top: 0;
+        right: -200%;
+        transition: right 0.3s;
+        position: relative;
+        
+    }
+    
+    .knapp{
+        right: 0;
+    }
+    
+    .car2{
+    
+        grid-area: 2!;
+        background-color: red;
+    
+    }
+    
+    .car3{
+    
+        grid-area: 3!;
+        background-color: red;
+    
+    }
+    .car4{
+    
+        grid-area: 4!;
+    
+    }
+    .car5{
+    
+        grid-area: 5!;
+    
+    }
+    .car6{
+    
+        grid-area: 6!;
+    
+    }
+    .car7{
+    
+        grid-area: 7!;
+    
+    }
+    .car8{
+    
+        grid-area: 8!;
+    
+    }
+    .car9{
+    
+        grid-area: 9!;
+    
+    }
+    .car10{
+    
+        grid-area: 10!;
+    
+    }
+
+}
