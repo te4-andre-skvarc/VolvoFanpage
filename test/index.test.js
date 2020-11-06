@@ -1,4 +1,4 @@
-const hello = require('../server/public/js/main');
+const hello = require('../server/public/src/main');
 
 // eslint-disable-next-line no-undef
 test('Returns Hello World!', () => {
