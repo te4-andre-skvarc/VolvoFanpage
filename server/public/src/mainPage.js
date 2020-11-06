@@ -4,8 +4,4 @@ function toggla() {
   xc90text.classList.toggle('knapp');
 }
 
-module.exports = toggla;
-
-const Hello = () => (1);
-
-module.exports = Hello;
+// export default toggla;
