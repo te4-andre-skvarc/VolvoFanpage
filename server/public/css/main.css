@@ -56,27 +56,63 @@ header{
     display: grid;
     
     grid-template-columns: 100%;
-    grid-template-rows:  650px 650px 650px 650px 650px 650px 650px 650px 650px 650px;
+    grid-template-rows:  650px 650px 650px 650px 650px 650px 650px 650px 650px 650px 650px;
     gap: 40px 1px;
     grid-template-areas:
-      "1!"
-      "2!"
-      "3!"
-      "4!"
-      "5!"
-      "6!"
-      "7!"
-      "8!"
-      "9!"
-      "10!";
-  }
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth"
+    "sixth"
+    "seventh"
+    "eigth"
+    "ninth"
+    "tenth"
+    "1first";
+}
 
-  .text1{
+.car1{
+    
+    grid-area: first;
+    border: 1px double #737070;
+    background-image: url(/img/welcome_desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    
+}
+.welcomegrid{
+    display: grid; 
+    grid-template-columns: 60% 40%; 
+    grid-template-rows: 50% 50%; 
+    height: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    grid-template-areas: 
+        "welcometxt"
+        "some"
+    
+    ;
+}
+.text1{
     grid-area: text;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     margin-left: 10%;
     margin-bottom: 50%;
+    opacity: 80%;
+    
+  }
+
+  .welcometext{
+    grid-area: welcometxt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    margin-top: 40%;
+    margin-left: 8%;
     opacity: 80%;
     
   }
@@ -101,18 +137,11 @@ header{
     ;
 }
 
+/* 
+// .grid-container{
+//     div:nth-of-type(1)
+// } */
 
-.car1{
-
-    grid-area: 1!;
-    border: 1px double #737070;
-    background-image: url(/img/Vovlo_fitted_xc90.jpg);
-    background-position: center;
-    background-size: cover;
-    -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
-    -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
-    box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
-}
 
 .info1{
     
@@ -138,50 +167,56 @@ header{
 
 .car2{
 
-    grid-area: 2!;
-    background-color: red;
+    grid-area: second;
+    border: 1px double #737070;
+    background-image: url(/img/Vovlo_fitted_xc90.jpg);
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+    box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
 
 }
 
 .car3{
 
-    grid-area: 3!;
+    grid-area: third;
     background-color: red;
 
 }
 .car4{
 
-    grid-area: 4!;
+    grid-area: fourth;
 
 }
 .car5{
 
-    grid-area: 5!;
+    grid-area: fifth;
 
 }
 .car6{
 
-    grid-area: 6!;
+    grid-area: sixth;
 
 }
 .car7{
 
-    grid-area: 7!;
+    grid-area: seventh;
 
 }
 .car8{
 
-    grid-area: 8!;
+    grid-area: eigth;
 
 }
 .car9{
 
-    grid-area: 9!;
+    grid-area: ninth;
 
 }
 .car10{
 
-    grid-area: 10!;
+    grid-area: tenth;
 
 }
 @media screen and (min-width: 1224px) {
@@ -236,23 +271,24 @@ header{
     }
     
     .grid-container {
-        margin: 100px;
+        margin: 35px;
         display: grid;
         
         grid-template-columns: 100%;
-        grid-template-rows:  650px 650px 650px 650px 650px 650px 650px 650px 650px 650px;
+        grid-template-rows:  80vh 95vh 650px 650px 650px 650px 650px 650px 650px 650px 650px;
         gap: 40px 1px;
         grid-template-areas:
-          "1!"
-          "2!"
-          "3!"
-          "4!"
-          "5!"
-          "6!"
-          "7!"
-          "8!"
-          "9!"
-          "10!";
+          "first"
+          "second"
+          "third"
+          "fourth"
+          "fifth"
+          "sixth"
+          "seventh"
+          "eigth"
+          "ninth"
+          "tenth"
+          "1first";
       }
     
       .text1{
@@ -288,16 +324,27 @@ header{
     
     .car1{
     
-        grid-area: 1!;
+        grid-area: first;
         border: 1px double #737070;
         border-radius: 10px;
-        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-image: url(/img/welcome_desktop.jpg);
         background-position: center;
         background-size: cover;
         -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
         -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
         box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+       
     }
+
+    .welcometext{
+        grid-area: welcometxt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        margin-top: 15%;
+        margin-left: 10%;
+        opacity: 80%;
+        
+      }
     
     .info1{
         
@@ -323,50 +370,57 @@ header{
     
     .car2{
     
-        grid-area: 2!;
-        background-color: red;
+        grid-area: second;
+        border: 1px double #737070;
+        border-radius: 10px;
+        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
     
     }
     
     .car3{
     
-        grid-area: 3!;
+        grid-area: third;
         background-color: red;
     
     }
     .car4{
     
-        grid-area: 4!;
+        grid-area: fourth;
     
     }
     .car5{
     
-        grid-area: 5!;
+        grid-area: fifth;
     
     }
     .car6{
     
-        grid-area: 6!;
+        grid-area: sixth;
     
     }
     .car7{
     
-        grid-area: 7!;
+        grid-area: seventh;
     
     }
     .car8{
     
-        grid-area: 8!;
+        grid-area: eigth;
     
     }
     .car9{
     
-        grid-area: 9!;
+        grid-area: ninth;
     
     }
     .car10{
     
-        grid-area: 10!;
+        grid-area: tenth;
     
     }
   }
@@ -425,19 +479,19 @@ header{
         margin: 100px;
         display: grid;
         height: 100%;
-        grid-template-rows:  1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px 1000px;
+        grid-template-rows:  85vh 100vh 100px 1000px 1000px 1000px 1000px 1000px 1000px 1000px;
         gap: 40px 1px;
         grid-template-areas:
-          "1!"
-          "2!"
-          "3!"
-          "4!"
-          "5!"
-          "6!"
-          "7!"
-          "8!"
-          "9!"
-          "10!";
+          "first"
+          "second"
+          "third"
+          "fourth"
+          "fifth"
+          "sixth"
+          "seventh"
+          "eigth"
+          "ninth"
+          "tenth";
       }
     
       .text1{
@@ -473,16 +527,28 @@ header{
     
     .car1{
     
-        grid-area: 1!;
+        grid-area: first;
         border: 1px double #737070;
         border-radius: 10px;
-        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-image: url(/img/larger_desktop.jpg);
         background-position: center;
         background-size: cover;
         -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
         -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
         box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+       
     }
+   
+    .welcometext{
+        grid-area: welcometxt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.8em;
+        margin-top: 4%;
+        margin-left: 10%;
+        opacity: 80%;
+        
+      }
+    
     
     .info1{
         
@@ -508,51 +574,58 @@ header{
     
     .car2{
     
-        grid-area: 2!;
-        background-color: red;
+        grid-area: second;
+        border: 1px double #737070;
+        border-radius: 10px;
+        background-image: url(/img/Vovlo_fitted_xc90.jpg);
+        background-position: center;
+        background-size: cover;
+        -webkit-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        -moz-box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
+        box-shadow: 4px -7px 9px 2px rgba(0,0,0,0.14);
     
     }
     
     .car3{
     
-        grid-area: 3!;
+        grid-area: third;
         background-color: red;
     
     }
     .car4{
     
-        grid-area: 4!;
+        grid-area: fourth;
     
     }
     .car5{
     
-        grid-area: 5!;
+        grid-area: fifth;
     
     }
     .car6{
     
-        grid-area: 6!;
+        grid-area: sixth;
     
     }
     .car7{
     
-        grid-area: 7!;
+        grid-area: seventh;
     
     }
     .car8{
     
-        grid-area: 8!;
+        grid-area: eigth;
     
     }
     .car9{
     
-        grid-area: 9!;
+        grid-area: ninth;
     
     }
     .car10{
     
-        grid-area: 10!;
+        grid-area: tenth;
     
     }
 
-}
+    }
