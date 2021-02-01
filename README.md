@@ -13,3 +13,6 @@ yarn build
 ```
 
 to bundle your application
+
+# This is just a frontend page at the moment 
+
